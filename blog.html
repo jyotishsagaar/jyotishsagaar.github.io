@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jyotish Sagaar Blog - Expert guides on KP Astrology, Numerology, Astro Vastu, and choosing the right astrologer.">
+    <meta name="keywords" content="Astrology Blog, KP Astrology, Numerology, Astro Vastu, Astrology Guide">
+    <title>Blog | Jyotish Sagaar - Astrology Insights & Guidance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .blog-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .blog-header h1 {
+            font-size: 3em;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .blog-card {
+            background: linear-gradient(135deg, #0e1c31 0%, #0a121f 100%);
+            border: 2px solid #404040;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .blog-card:hover {
+            border-color: #ffd700;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+        }
+        .blog-card .blog-category {
+            color: #ffd700;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .blog-card h3 {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+        .blog-card p {
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            display: inline-block;
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .read-more:hover {
+            color: #ffffff;
+            margin-left: 10px;
+        }
+        .blog-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .blog-article {
+            background: linear-gradient(135deg, #0e1c31 0%, #0a121f 100%);
+            border: 2px solid #404040;
+            border-radius: 15px;
+            padding: 50px;
+            margin-bottom: 40px;
+            color: #cccccc;
+            line-height: 1.8;
+        }
+        .blog-article h1 {
+            color: #ffd700;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .blog-article h2 {
+            color: #ffd700;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .blog-article h3 {
+            color: #e0c6a6;
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .blog-article p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .blog-article ul, .blog-article ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .blog-article li {
+            margin-bottom: 10px;
+        }
+        .blog-article table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(255, 215, 0, 0.05);
+        }
+        .blog-article table th {
+            background: rgba(255, 215, 0, 0.15);
+            color: #ffd700;
+            padding: 12px;
+            text-align: left;
+        }
+        .blog-article table td {
+            border: 1px solid #404040;
+            padding: 12px;
+        }
+        .blog-article strong {
+            color: #ffd700;
+        }
+        .meta-info {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #ffd700;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .back-to-blog {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-to-blog:hover {
+            color: #ffffff;
+        }
+        @media (max-width: 768px) {
+            .blog-article {
+                padding: 20px;
+            }
+            .blog-article h1 {
+                font-size: 1.8em;
+            }
+            .blog-header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Header -->
+<header class="navbar-header">
+    <div class="container nav-container">
+        <div class="logo-area">
+            <img src="images/logo.jpeg" alt="Jyotish Sagaar Logo" class="logo">
+            <div class="logo-text">
+                <h2>Jyotish Sagaar</h2>
+                <p>Research Based KP Astrology</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#packages" class="nav-link">Packages</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="index.html#consultation" class="nav-link">Consultation</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Blog Section -->
+<section id="blog" class="packages-section" style="padding: 80px 0; background: linear-gradient(135deg, rgba(14, 28, 49, 0.9), rgba(10, 18, 31, 0.9));">
+    <div class="container">
+        <div class="blog-container">
+            <div class="blog-header">
+                <h1>Astrology Insights & Guidance</h1>
+                <div class="header-line"></div>
+                <p style="color: #cccccc; font-size: 1.1em; margin-top: 20px;">Expert blog posts on KP Astrology, Numerology, Astro Vastu, and more</p>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card">
+                    <div class="blog-category">🔮 Astrology</div>
+                    <h3>KP Astrology: The Complete Guide</h3>
+                    <div class="blog-meta">
+                        <span>📅 June 18, 2026</span>
+                        <span>⏱️ 15 min read</span>
+                    </div>
+                    <p>Discover the revolutionary KP Astrology (Krishnamurti Paddhati) system. Learn how it provides pin-point accurate predictions and differs from traditional Vedic astrology.</p>
+                    <a href="blog-1.html" class="read-more">Read Article →</a>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card">
+                    <div class="blog-category">🔢 Numerology</div>
+                    <h3>Numerology & Your Destiny Number</h3>
+                    <div class="blog-meta">
+                        <span>📅 June 18, 2026</span>
+                        <span>⏱️ 18 min read</span>
+                    </div>
+                    <p>Learn how numbers shape your life. Discover your Life Path, Destiny, and Soul Urge numbers, and how they influence your career, relationships, and purpose.</p>
+                    <a href="blog-2.html" class="read-more">Read Article →</a>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card">
+                    <div class="blog-category">🏠 Vastu</div>
+                    <h3>Astro Vastu: Harmonize Your Home</h3>
+                    <div class="blog-meta">
+                        <span>📅 June 18, 2026</span>
+                        <span>⏱️ 20 min read</span>
+                    </div>
+                    <p>Transform your home with Astro Vastu principles. Learn about the 9 zones, cosmic energy alignment, and practical remedies for prosperity and well-being.</p>
+                    <a href="blog-3.html" class="read-more">Read Article →</a>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="blog-card">
+                    <div class="blog-category">👨‍💼 Guidance</div>
+                    <h3>How to Choose the Right Astrologer</h3>
+                    <div class="blog-meta">
+                        <span>📅 June 18, 2026</span>
+                        <span>⏱️ 22 min read</span>
+                    </div>
+                    <p>Find a trustworthy astrological consultant. Discover red flags to avoid, credentials to verify, and questions to ask before booking your consultation.</p>
+                    <a href="blog-4.html" class="read-more">Read Article →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/919073370100" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <h3>Jyotish Sagaar</h3>
+            <p>Research Based KP Astrology | Numerology | Astro Vastu</p>
+            <p class="copyright">© 2026 Jyotish Sagaar. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
